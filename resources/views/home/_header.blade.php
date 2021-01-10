@@ -13,14 +13,18 @@
                                 </ul>
                             </div>
                             <div class="header-info-right">
-                                <ul class="header-date">
-                                    <li><span class="flaticon-calendar"></span> +880166 253 232</li>
-                                </ul>
+
+
+                                <div class="container">
+
+                                    <a class="btn btn-primary" href="#">Kayıt/Giriş</a>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
             <div class="header-mid gray-bg">
                 <div class="container">
                     <div class="row d-flex align-items-center">

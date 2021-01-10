@@ -69,7 +69,7 @@
                 </div>
             </div>
         </div>
-        <!-- footer-bottom aera -->
+        <!-- footer-bottom aeraasasa -->
         <div class="footer-bottom-area footer-bg">
             <div class="container">
                 <div class="footer-border">

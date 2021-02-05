@@ -8,7 +8,7 @@
                         <div class="row d-flex justify-content-between align-items-center">
                             <div class="header-info-left">
                                 <ul>
-                                    <li class="title"><span class="flaticon-energy"></span> trending-title</li>
+                                    <li class="title"><span class="flaticon-energy"></span> SON DAKİKA</li>
                                     <li>Class property employ ancho red multi level mansion</li>
                                 </ul>
                             </div>
@@ -17,7 +17,7 @@
 
                                 <div class="container">
 
-                                    <a class="btn btn-primary" href="#">Kayıt/Giriş</a>
+                                    <a class="btn btn-primary" href="login.php">lOGİN UP</a>
                                 </div>
 
 

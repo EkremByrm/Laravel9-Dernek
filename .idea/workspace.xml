@@ -1,10 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2046b2cd-8c63-4b69-b3e5-4d0e20ff21c5" name="Default Changelist" comment="">
+    <list default="true" id="2046b2cd-8c63-4b69-b3e5-4d0e20ff21c5" name="Default Changelist" comment="2. düzeltme">
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TEMPS/news-master/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TEMPS/news-master/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/contact-us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/baguetteBox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/bootsnav.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/bootstrap-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/carousel-ticker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/code_animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/css/superslides.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/about-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/add-img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/add-img-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/all-bg-title.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/banner-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/banner-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/banner-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/big-img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/big-img-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/big-img-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/blog-img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/blog-img-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/blog-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/categories_img_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/categories_img_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/categories_img_03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/contact-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/gallery-img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/gallery-img-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/gallery-img-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/gallery-img-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/gallery-img-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/gallery-img-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/gallery-img-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/gallery-img-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/gallery-img-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/gallery-img-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/gallery-img-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/gallery-img-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/img-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/img-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/img-pro-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/img-pro-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/img-pro-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/img-pro-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/ins-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/instagram-img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/instagram-img-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/instagram-img-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/instagram-img-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/instagram-img-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/instagram-img-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/instagram-img-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/instagram-img-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/instagram-img-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/payment-icon/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/payment-icon/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/payment-icon/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/payment-icon/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/payment-icon/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/payment-icon/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/payment-icon/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/smp-img-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/smp-img-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/images/smp-img-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/baguetteBox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/bootsnav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/bootstrap-select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/contact-form-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/form-validator.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/images-loded.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/inewsticker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/isotope.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/jquery-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/jquery.nicescroll.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/jquery.superslides.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/my-account.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/php/form-process.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/shop-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/shop.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TEMPS/freshshop/wishlist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +284,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Php\gunder\resources\views\admin" />
       <recent name="C:\Php\gunder\public" />
       <recent name="C:\Php\gunder\resources\views\home" />
     </key>
@@ -186,8 +307,21 @@
       <workItem from="1609107041957" duration="1416000" />
       <workItem from="1609360567597" duration="28000" />
       <workItem from="1609360608800" duration="1000" />
-      <workItem from="1609933997956" duration="26628000" />
+      <workItem from="1609933997956" duration="27700000" />
+      <workItem from="1610305471559" duration="153000" />
+      <workItem from="1610897325963" duration="10332000" />
+      <workItem from="1611789738137" duration="6000" />
+      <workItem from="1611789753867" duration="57000" />
+      <workItem from="1612090943901" duration="599000" />
     </task>
+    <task id="LOCAL-00001" summary="2. düzeltme">
+      <created>1610298605427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610298605427</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,5 +337,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2. düzeltme" />
+    <option name="LAST_COMMIT_MESSAGE" value="2. düzeltme" />
   </component>
 </project>

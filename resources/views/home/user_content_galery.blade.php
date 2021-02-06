@@ -8,6 +8,7 @@
 
 @section('content')
 
+
     <div class="wrapper row3">
         <div class="gezinme" style="width:100%;height:50px;">
             <ul style="list-style: none;">

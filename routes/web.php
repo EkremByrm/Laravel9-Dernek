@@ -41,7 +41,7 @@ Route::middleware("admin")->prefix('admin')->group(function () {
         Route::get('/category/show/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'show'])->name('admin_category_show');
         Route::get('/category/destroy/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'destroy'])->name('admin_category_destroy');
 
-        //product routlari
+        //product routları
         Route::prefix('product')->group(function () {
             Route::get('/', [App\Http\Controllers\Admin\ProductController::class, 'index'])->name('admin_product');
             Route::get('/create', [App\Http\Controllers\Admin\ProductController::class, 'create'])->name('admin_product_create');
@@ -113,6 +113,7 @@ Route::middleware("admin")->prefix('admin')->group(function () {
     });
 
 //user Routes
+/*
 Route::middleware("auth")->prefix('user')->namespace("user")->group(function () {
     Route::get('/profile', [UserController::class, 'index'])->name('userprofile');
     Route::get('/myreview', [UserController::class, 'myreview'])->name('myreview');
@@ -134,7 +135,7 @@ Route::middleware("auth")->prefix('user')->namespace("user")->group(function () 
 
 
     });
-});
+}); */
 
 //admin_login
 Route::get('/admin/login', [App\Http\Controllers\HomeController::class, 'login'])->name('admin_login');

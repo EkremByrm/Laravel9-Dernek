@@ -14,6 +14,7 @@
                 <li class="active">
                     &nbsp; User Profile
                 </li>
+
             </ul>
         </div>
         <main class="hoc container clear">
@@ -70,10 +71,10 @@
     </div>
 <style>
     .sidebar a {
-        font: bold 20px calibri;
+        font: bold 22px calibri;
 
     }
-    
+
 </style>
 
 

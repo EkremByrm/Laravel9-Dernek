@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2046b2cd-8c63-4b69-b3e5-4d0e20ff21c5" name="Default Changelist" comment="Düzenleme 22">
+      <change beforePath="$PROJECT_DIR$/.idea/Gunder.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel_dernek.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/referance.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/referance.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_content_add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_content_add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_content_galery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_content_galery.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_content_update.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_content_update.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home/user_profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +211,9 @@
       <workItem from="1612630198507" duration="173000" />
       <workItem from="1612630376614" duration="303000" />
       <workItem from="1612632266639" duration="550000" />
-      <workItem from="1612632831733" duration="116000" />
+      <workItem from="1612632831733" duration="172000" />
+      <workItem from="1612633007748" duration="60000" />
+      <workItem from="1612633072513" duration="1120000" />
     </task>
     <task id="LOCAL-00001" summary="2. düzeltme">
       <created>1610298605427</created>
@@ -249,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612632845565</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Düzenleme 22">
+      <created>1612632965573</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1612632965573</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,8 +298,8 @@
     <MESSAGE value="düzenleme 17.1" />
     <MESSAGE value="düzenleme 19" />
     <MESSAGE value="Duzenleme 22" />
-    <MESSAGE value="Düzenleme 22" />
     <MESSAGE value="Düzenleme 22.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Düzenleme 22.1" />
+    <MESSAGE value="Düzenleme 22" />
+    <option name="LAST_COMMIT_MESSAGE" value="Düzenleme 22" />
   </component>
 </project>

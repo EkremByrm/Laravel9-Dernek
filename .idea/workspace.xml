@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2046b2cd-8c63-4b69-b3e5-4d0e20ff21c5" name="Default Changelist" comment="14. video son">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2046b2cd-8c63-4b69-b3e5-4d0e20ff21c5" name="Default Changelist" comment="14. video son" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,6 +190,7 @@
       <workItem from="1611789753867" duration="57000" />
       <workItem from="1612090943901" duration="599000" />
       <workItem from="1612554147618" duration="1233000" />
+      <workItem from="1612602164633" duration="565000" />
     </task>
     <task id="LOCAL-00001" summary="2. düzeltme">
       <created>1610298605427</created>
@@ -207,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612554178091</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="düzenleme 17.1">
+      <created>1612602291646</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612602291646</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +234,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2. düzeltme" />
     <MESSAGE value="14. video son" />
-    <option name="LAST_COMMIT_MESSAGE" value="14. video son" />
+    <MESSAGE value="düzenleme 17.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="düzenleme 17.1" />
   </component>
 </project>

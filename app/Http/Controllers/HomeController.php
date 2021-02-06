@@ -29,12 +29,14 @@ class HomeController extends Controller
         $soneklenen=Product::first();
         $galery=Image::where("product_id",$soneklenen->id)->limit(3)->get();
         $picked=Product::limit(3)->where("status","True")->inRandomOrder()->get();
+        $haber=Product::limit(3)->where("status","True")->inRandomOrder()->get();
         return view("home.index",[
             'setting'=>$setting,
             'slider'=>$slider,
             'soneklenen'=>$soneklenen,
             'galery'=>$galery,
-            'picked'=>$picked,
+            'yardim'=>$picked,
+            'haber'=>$haber,
         ]);
     }
     public function contact(){
@@ -52,7 +54,7 @@ class HomeController extends Controller
         $data->message=$request->message;
         $data->ip=$_SERVER["REMOTE_ADDR"];
         $data->save();
-        return redirect()->route("contact")->with("success","Mesajiniz Basariyla Gonderilmisdir.");
+        return redirect()->route("contact")->with("success","Mesajınız Başarıyla Gönderilmistir.");
     }
     public function category_content($id){
         $datalist=Product::where("category_id",$id)->get();
@@ -90,7 +92,7 @@ class HomeController extends Controller
             return view('home.content_list',[
                 'datalist'=>$datalist,
                 'search'=>$search
-            ])->with("warning","Aramaniza uygun sonuc bulunamadi");
+            ])->with("warning","Aramanıza uygun sonuç bulunamadı");
         }
 
         else{

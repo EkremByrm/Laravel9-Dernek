@@ -113,7 +113,7 @@ class ProductController extends Controller
             $data->image=Storage::putFile("images",$request->file("image"));
         }
         $data->save();
-        return redirect()->route("admin_product")->with("succes","Category is created");
+        return redirect()->route("admin_product")->with("succes","Content is created");
     }
 
     /**

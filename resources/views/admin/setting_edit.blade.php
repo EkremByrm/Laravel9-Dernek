@@ -7,9 +7,9 @@
 
     <div id="content">
         <div id="content-header">
-            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-                <a href="{{ route("admin_setting")}}" class="current">Setting</a> </div>
-            <h1>Setting</h1>
+            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Ana Sayfa</a>
+                <a href="{{ route("admin_setting")}}" class="current">Site Ayarları</a> </div>
+            <h1>Site Ayarları</h1>
         </div>
 
         <div class="container-fluid">
@@ -22,20 +22,20 @@
                                 <div class="widget-box">
                                     <div class="widget-title">
                                         <ul class="nav nav-tabs">
-                                            <li class="active"><a data-toggle="tab" href="#General">General</a></li>
+                                            <li class="active"><a data-toggle="tab" href="#General">Genel</a></li>
                                             <li><a data-toggle="tab" href="#Smtp">Smtp</a></li>
-                                            <li><a data-toggle="tab" href="#Social">Social</a></li>
-                                            <li><a data-toggle="tab" href="#Aboutus">Aboutus</a></li>
-                                            <li><a data-toggle="tab" href="#Contact">Contact</a></li>
-                                            <li><a data-toggle="tab" href="#Referance">Referance</a></li>
+                                            <li><a data-toggle="tab" href="#Social">Sosyal Medya</a></li>
+                                            <li><a data-toggle="tab" href="#Aboutus">Hakkımzıda</a></li>
+                                            <li><a data-toggle="tab" href="#Contact">İletişim</a></li>
+                                            <li><a data-toggle="tab" href="#Referance">Referanslar</a></li>
                                         </ul>
                                     </div>
                                     <div class="widget-content tab-content">
                                         <div id="General" class="tab-pane active">
                                             <div class="control-group">
-                                                <label class="control-label">Title</label>
+                                                <label class="control-label">Başlık</label>
                                                 <div class="controls">
-                                                    <input value="{{$data->title}}" required type="text" name="title" class="span11" placeholder="Title" />
+                                                    <input value="{{$data->title}}" required type="text" name="title" class="span11" placeholder="Başlık" />
                                                 </div>
                                             </div>
                                             <div class="control-group">
@@ -51,9 +51,9 @@
                                                 </div>
                                             </div>
                                             <div class="control-group">
-                                                <label class="control-label">Company</label>
+                                                <label class="control-label">Şirket</label>
                                                 <div class="controls">
-                                                    <input value="{{$data->company}}" type="text" name="company" class="span11" placeholder="company"  />
+                                                    <input value="{{$data->company}}" type="text" name="company" class="span11" placeholder="Şirket"  />
                                                 </div>
                                             </div>
                                             <div class="control-group">
@@ -64,15 +64,15 @@
                                             </div>
 
                                             <div class="control-group">
-                                                <label for="normal" class="control-label">Phone</label>
+                                                <label for="normal" class="control-label">Telefon</label>
                                                 <div class="controls">
-                                                    <input name="phone" type="text" id="mask-phone" class="span8 mask text">
+                                                    <input value="{{$data->phone}}" name="phone" type="text" id="mask-phone" class="span8 mask text" placeholder="Telefon">
                                                     <span class="help-block blue span8">(999) 999-9999</span> </div>
                                             </div>
                                             <div class="control-group">
-                                                <label for="normal" class="control-label">Fax</label>
+                                                <label for="normal" class="control-label">Faks</label>
                                                 <div class="controls">
-                                                    <input name="fax" type="text" id="mask-phone" class="span8 mask text">
+                                                    <input value="{{$data->fax}}" name="fax" type="text" id="mask-phone" class="span8 mask text" placeholder="Faks">
                                                     <span class="help-block blue span8">(999) 999-9999</span> </div>
                                             </div>
                                             <div class="control-group">
@@ -82,7 +82,7 @@
                                                 </div>
                                             </div>
                                             <div class="control-group" >
-                                                <label class="control-label">Status</label>
+                                                <label class="control-label">Durum</label>
                                                 <div class="controls">
                                                     <select name="status" >
                                                         <option value="True">True</option>
@@ -149,7 +149,7 @@
                                         </div>
                                         <div id="Aboutus" class="tab-pane">
                                             <div class="control-group">
-                                                <label class="control-label">About Us</label>
+                                                <label class="control-label">Hakkımızda</label>
                                                 <div class="controls">
                                     <textarea  class="span11"name="aboutus" >
                                         {{ $data->aboutus }}
@@ -163,7 +163,7 @@
                                         </div>
                                         <div id="Contact" class="tab-pane">
                                             <div class="control-group">
-                                                <label class="control-label">Contact</label>
+                                                <label class="control-label">İletişim</label>
                                                 <div class="controls">
                                     <textarea  class="span11"name="contact" >
                                         {{ $data->contact }}
@@ -177,7 +177,7 @@
                                         </div>
                                             <div id="Referance" class="tab-pane">
                                             <div class="control-group">
-                                                <label class="control-label">Referances</label>
+                                                <label class="control-label">Referanslar</label>
                                                 <div class="controls">
                                     <textarea  class="span11"name="referances" >
                                         {{ $data->referances }}
@@ -197,7 +197,7 @@
 
 
                                 <div class="form-actions">
-                                    <button type="submit" class="btn btn-success">Save</button>
+                                    <button type="submit" class="btn btn-success">Güncelle</button>
                                 </div>
                             </form>
                         </div>

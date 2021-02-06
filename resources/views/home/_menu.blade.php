@@ -7,9 +7,7 @@ $parentCategories=\App\Http\Controllers\HomeController::categorylist();
         <!-- ################################################################################################ -->
         <nav id="mainav">
             <ul class="clear">
-                <li><a href="/">ANASAYFA</a></li>
-                <li><a class="drop" href="#" onclick="return false;">DERNEĞİMİZ</a>
-                <ul>
+                <li><a href="/">Anasayfa</a></li>
                 @foreach($parentCategories as $rs)
                 @if(count($rs->children))
                         <li><a class="drop" href="#" onclick="return false;">{{ $rs->title }}</a>
@@ -22,14 +20,17 @@ $parentCategories=\App\Http\Controllers\HomeController::categorylist();
                     <li><a href="{{ route("category",['id'=>$rs->id,'slug'=>$rs->slug]) }}">{{ $rs->title }}</a></li>
                     @endif
                 @endforeach
-                </ul>
-                <li><a href="/contact">İLETİŞİM</a></li>
-                <li><a href="/aboutus">HAKKIMZIDA</a></li>
-                <li><a href="/referance">REFERANSLAR</a></li>
+                <li><a class="drop" href="#" onclick="return false;">Kurumsal</a>
+                <ul>
+                <li><a href="/contact">İletişim</a></li>
+                <li><a href="/aboutus">Hakkımızda</a></li>
+                <li><a href="/referance">Referanslar</a></li>
                 <li><a href="/faq">SSS</a></li>
+                </ul>
+                </li>
                 @auth
                 <li><a class="drop" href="#" onclick="return false;"
-                       style="background-color: #1f6377;">
+                       >
                         &nbsp;<i class="fa fa-user"></i>&nbsp;{{Auth::user()->name}}&nbsp;&nbsp;</a>
                     <ul>
                         <li><a href="{{route("userprofile")}}">Profilim</a></li>
@@ -40,18 +41,18 @@ $parentCategories=\App\Http\Controllers\HomeController::categorylist();
                 </li>
                 @endauth
                 @guest
-                <li><a href="/login" style="background-color: #1f6377;">GİRİŞ</a></li>
-                <li><a href="/register"style="background-color: #1f6377;">KAYIT</a></li>
+                <li><a href="/login" style="color: #1a202c;font:bold 15px verdana;">Giriş</a></li>
+                <li><a href="/register"style="color: #1a202c;font:bold 15px verdana;">Kayıt</a></li>
                 @endguest
             </ul>
         </nav>
         <!-- ################################################################################################ -->
-        <div id="searchform">
+        <div style="margin-top: 20px;float: right;width: 250px;">
             <div>
                 <form action="{{ route('getproduct') }}" method="post">
                     @csrf
                     @livewire('search')
-                    <button type="submit"><span class="fa fa-search"></span></button>
+                    <button type="submit" style="background-color: #1a202c"><span class="fa fa-search"></span></button>
                 </form>
                 @livewireScripts
             </div>

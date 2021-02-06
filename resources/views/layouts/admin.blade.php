@@ -23,7 +23,12 @@
 @yield("css_end")
 @yield("js_end")
 
-
+<style>
+    .btn-mini{
+        font-size: 14px!important;
+        border-radius: 5px;
+    }
+</style>
 
 </body>
 </html>

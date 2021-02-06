@@ -1,9 +1,9 @@
 body {
-	background:#2E363F;
+	background:#0e1800;
 }
 
 #header {
-	background-color: #1f262d;
+	background-color: #000;
    margin-top:10px;
 }
 #search input[type=text], #search button {
@@ -25,7 +25,7 @@ body {
 	background-color:#F66;
 }
 #sidebar > ul > li > a:hover {
-	background-color: #27a9e3; color:#fff;
+	background-color: #798d5f; color:#fff;
 }
 #sidebar > ul li ul {
 	background-color: #1e242b;

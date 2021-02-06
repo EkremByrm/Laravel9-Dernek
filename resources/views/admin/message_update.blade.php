@@ -5,17 +5,17 @@
 <link href="{{asset("assets/admin")}}/font-awesome/css/font-awesome.css" rel="stylesheet" />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 @include("home.message")
-<h3 style="margin: 10px;text-align: center;">Message Detail</h3>
+<h3 style="margin: 10px;text-align: center;">Mesaj Bilgileri</h3>
 <form style="margin:20px;" enctype="multipart/form-data" action="{{ route('admin_message_update',['id'=>$data->id]) }}" method="post" class="form-horizontal">
     @csrf
     <div class="control-group">
-        <label class="control-label">Name</label>
+        <label class="control-label">İsim</label>
         <div class="controls">
             <input value="{{ $data->name }}"  type="text" disabled class="span11" placeholder="Name" />
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label">Phone</label>
+        <label class="control-label">Tel</label>
         <div class="controls">
             <input value="{{ $data->phone }}"  type="text" disabled class="span11" placeholder="Phone" />
         </div>
@@ -27,32 +27,32 @@
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label">Subject</label>
+        <label class="control-label">Konu</label>
         <div class="controls">
             <input  value="{{ $data->subject }}" type="text" disabled class="span11" placeholder="subject"  />
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label">IP Adress</label>
+        <label class="control-label">IP Adresi</label>
         <div class="controls">
             <input  value="{{ $data->ip }}" type="text" disabled class="span11" placeholder="ip adress"  />
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label">Message</label>
+        <label class="control-label">Mesaj</label>
         <div class="controls">
             <textarea disabled class="span11"  > {{ $data->message }}
             </textarea>
         </div>
     </div>
     <div class="control-group">
-        <label class="control-label">Note</label>
+        <label class="control-label">Not</label>
         <div class="controls">
             <input  value="{{ $data->note }}" type="text" name="note" class="span11" placeholder="note"  />
         </div>
     </div>
     <div class="control-group" >
-        <label class="control-label">Status</label>
+        <label class="control-label">Durum</label>
         <div class="controls">
             <select class="span11" name="status" >
                 <option value="Read">Read</option>
@@ -65,7 +65,7 @@
         </div>
     </div>
     <div class="form-actions">
-        <button type="submit" class="btn btn-success">Update</button>
+        <button type="submit" class="btn btn-success">Güncelle</button>
     </div>
 
 

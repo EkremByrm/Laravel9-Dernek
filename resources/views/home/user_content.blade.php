@@ -41,13 +41,13 @@
                                 <td>{{$rs->id}}</td>
                                 <td>{{$rs->category->title}}</td>
                                 <td>{{$rs->title}}</td>
-                                <td align="center" style="text-align: center;"><img src="{{Storage::url($rs->image) }}" style="width: 120px;height: 80px;"></td>
+                                <td align="center" style="text-align: center;width: 160px;"><img src="{{Storage::url($rs->image) }}" style="width: 160px;height: 80px;"></td>
                                 <td style="width:55px; "><a href="{{ route('user_content_image',['id'=>$rs->id]) }}"><img src="/assets/galery.png" width="50px" height="50px"></a></td>
                                 <td>{{$rs->status}}</td>
                                 <td style="width:100px;">
-                                    <a href="{{ route("user_content_edit",['id'=>$rs->id]) }}" ><i class="fa fa-edit" style="color:midnightblue;"></i></a>
-                                    <a href="{{ route("user_content_destroy",['id'=>$rs->id]) }}" onclick="return confirm('Are You Sure To Delete')"  style="float: right;">
-                                        <i class="fa fa-window-close" style="color:darkred;"></i></a>
+                                    <a href="{{ route("user_content_edit",['id'=>$rs->id]) }}" >Düzenle</a>
+                                    <a href="{{ route("user_content_destroy",['id'=>$rs->id]) }}" onclick="return confirm('Are You Sure To Delete')"  style="float: right;color: darkred;">
+                                        Sil</a>
                                 </td>
                             </tr>
                         @endforeach

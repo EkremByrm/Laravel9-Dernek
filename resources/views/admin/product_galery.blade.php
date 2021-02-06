@@ -7,9 +7,9 @@
 
     <div id="content">
         <div id="content-header">
-            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-                <a href="{{ route("admin_product")}}" class="current">Contents</a> </div>
-            <h1>Content Galery</h1>
+            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Ana Sayfa</a>
+                <a href="{{ route("admin_product")}}" class="current">İçerikler</a> </div>
+            <h1>İçerik Resim Galerisi</h1>
         </div>
 
         <div class="container-fluid">
@@ -21,19 +21,19 @@
                                 @csrf
                                 <input type="text" style="display: none" hidden name="product_id" value="{{ $product_id }}">
                                 <div class="control-group">
-                                    <label class="control-label">Title</label>
+                                    <label class="control-label">Başlık</label>
                                     <div class="controls">
-                                        <input required type="text" name="title" class="form-control" placeholder="Title" />
+                                        <input required type="text" name="title" class="form-control" placeholder="Başlık" />
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Image</label>
+                                    <label class="control-label">Resim</label>
                                     <div class="controls">
                                         <input required name="image" type="file" />
                                     </div>
                                 </div>
                                 <div class="form-actions">
-                                    <button type="submit" class="btn btn-success">Add Image</button>
+                                    <button type="submit" class="btn btn-success">Resim Ekle</button>
                                 </div>
                             </form>
                         </div>
@@ -47,8 +47,8 @@
                     <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Title</th>
-                        <th>Image</th>
+                        <th>Başlık</th>
+                        <th>Resim</th>
                         <th></th>
                     </tr>
                     </thead>
@@ -60,7 +60,7 @@
                             <td><img style="height: 80px;margin:10px;border: 1px solid #001;" src="{{ Storage::url($rs->image) }}" alt="">
                             </td>
                             <td><a class="btn btn-danger" href="{{ route("admin_product_image_destroy",['id'=>$rs->id]) }}" onclick="return confirm('Are You Sure To Delete')">
-                                   Delete
+                                   Sil
                                 </a></td>
                             @endforeach
                         </tr>

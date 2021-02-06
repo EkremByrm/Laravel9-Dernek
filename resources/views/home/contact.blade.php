@@ -25,7 +25,7 @@
         <main class="hoc container clear">
             <div class="content">
                 <!-- ################################################################################################ -->
-                <h2>Contact Page</h2>
+                <h2>İletişim Sayfası</h2>
                 <!-- ################################################################################################ -->
                 <div class="group btmspace-50 demo">
                     <div class="one_half first">
@@ -33,8 +33,8 @@
                         <form class="form-inline" method="post" action="{{ route("sendmessage") }}">
                             @csrf
                                     <div class="form-group">
-                                        <label for="name">Name:</label>
-                                        <input type="text" name="name" placeholder="Your Name" class="form-control">
+                                        <label for="name">İsim:</label>
+                                        <input type="text" name="name" placeholder="İsminiz" class="form-control">
                                     </div>
 
                                     <div class="form-group">
@@ -42,20 +42,20 @@
                                         <input type="email" name="email" placeholder="Email" class="form-control">
                                     </div>
                                     <div class="form-group">
-                                        <label for="name">Subject:</label>
-                                        <input type="text" name="subject" placeholder="Subject" class="form-control">
+                                        <label for="name">Konu:</label>
+                                        <input type="text" name="subject" placeholder="Konu" class="form-control">
                                     </div>
                                     <div class="form-group">
-                                        <label for="name">Phone:</label>
-                                        <input type="text" name="phone" placeholder="Phone" class="form-control">
+                                        <label for="name">Telefon:</label>
+                                        <input type="text" name="phone" placeholder="Telefon" class="form-control">
                                     </div>
 
                             <div class="form-group">
-                                <label for="name">Message:</label>
-                                <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+                                <label for="name">Mesaj:</label>
+                                <textarea name="message" class="form-control" rows="3" placeholder="Mesajınız"></textarea>
                             </div>
                             <br>
-                            <button style="margin-top:10px; " class="btn-success" >Send</button>
+                            <button style="margin-top:10px; " class="btn btn-inverse" >Gönder</button>
                         </form>
 
                     </div>

@@ -26,10 +26,13 @@
                         <header class="heading">{{$data->title}}</header>
                         <ul class="nospace clear">
                             @foreach($datalist as $rs)
-                                <li class="one_quarter" style="float: left;">
-                                    <a class="imgover"  href="{{ route('product_detail',['id'=>$rs->id ,'slug'=>$rs->slug])}}">
-                                        <img src="{{ Storage::url($rs->image) }}" alt="{{$rs->title}}"></a>
-                                <p style="text-align: center;"><a href="{{ route('product_detail',['id'=>$rs->id ,'slug'=>$rs->slug])}}">{{$rs->title}}</a></p>
+                                <li class="one_quarter" style="float: left;height: 400px;overflow: hidden;">
+                                    <a class="imgover"
+                                       href="{{ route('product_detail',['id'=>$rs->id ,'slug'=>$rs->slug])}}">
+                                        <img style="height: 200px;width: 100%;" src="{{ Storage::url($rs->image) }}" alt="{{$rs->title}}"></a>
+                                    <p style="text-align: center;"><a
+                                                href="{{ route('product_detail',['id'=>$rs->id ,'slug'=>$rs->slug])}}">{{substr($rs->title,0,30)}}</a>
+                                    </p>
                                 </li>
                             @endforeach
 
@@ -44,4 +47,4 @@
 
 
 
-    @endsection
+@endsection

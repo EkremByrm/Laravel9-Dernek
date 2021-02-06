@@ -5,9 +5,9 @@
 
     <div id="content">
         <div id="content-header">
-            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-                <a href="{{ route("admin_category")}}" class="current">Categories</a> </div>
-            <h1>Category Update</h1>
+            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Anasayfa</a>
+                <a href="{{ route("admin_category")}}" class="current">Kategoriler</a> </div>
+            <h1>Kategori Güncelle </h1>
         </div>
 
         <div class="container-fluid">
@@ -15,16 +15,16 @@
                 <div class="span6">
                     <div class="widget-box">
                         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                            <h5>Category-Info</h5>
+                            <h5>Kategori-Bilgileri</h5>
                         </div>
                         <div class="widget-content nopadding">
                             <form enctype="multipart/form-data" action="{{ route('admin_category_update',['id'=>$data->id]) }}" method="post" class="form-horizontal">
                                 @csrf
                                 <div class="control-group">
-                                    <label class="control-label">Parent Category</label>
+                                    <label class="control-label">Üst Kategori</label>
                                     <div class="controls">
                                         <select name="parent_id">
-                                            <option value="0" >Main Category</option>
+                                            <option value="0" >Ana Kategori</option>
                                             @foreach($parent_category as $rs)
                                                 @if($rs->id == $data->parent_id)
                                                 <option selected value="{{ $rs->id }}">{{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($rs, $rs->title) }}</option>
@@ -37,9 +37,9 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Title</label>
+                                    <label class="control-label">Başlık</label>
                                     <div class="controls">
-                                        <input value="{{ $data->title }}" required type="text" name="title" class="span11" placeholder="Title" />
+                                        <input value="{{ $data->title }}" required type="text" name="title" class="span11" placeholder="Başlık" />
                                     </div>
                                 </div>
                                 <div class="control-group">
@@ -55,7 +55,7 @@
                                     </div>
                                 </div>
                                 <div class="control-group" >
-                                    <label class="control-label">Status</label>
+                                    <label class="control-label">Durum</label>
                                     <div class="controls">
                                         <select name="status" >
                                             <option value="True">True</option>
@@ -75,7 +75,7 @@
                                     </div>
                                 </div>
                                 <div class="form-actions">
-                                    <button type="submit" class="btn btn-success">Save</button>
+                                    <button type="submit" class="btn btn-success">Kategoriyi Güncelle </button>
                                 </div>
                             </form>
                         </div>

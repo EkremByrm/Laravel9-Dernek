@@ -7,9 +7,9 @@
 
     <div id="content">
         <div id="content-header">
-            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-                <a href="{{ route("admin_product")}}" class="current">Contents</a> </div>
-            <h1>Content Add</h1>
+            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Ana Sayfa</a>
+                <a href="{{ route("admin_product")}}" class="current">İçerikler</a> </div>
+            <h1>İçerik Ekleme</h1>
         </div>
 
         <div class="container-fluid">
@@ -20,7 +20,7 @@
                             <form enctype="multipart/form-data" action="{{ route("admin_product_store") }}" method="post" class="form-horizontal">
                                 @csrf
                                 <div class="control-group">
-                                    <label class="control-label">Category</label>
+                                    <label class="control-label">Kategori</label>
                                     <div class="controls">
                                         <select class="span11" name="category_id">
                                             @foreach($category_list as $rs)
@@ -31,9 +31,9 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Title</label>
+                                    <label class="control-label">Başlık</label>
                                     <div class="controls">
-                                        <input required type="text" name="title" class="span11" placeholder="Title" />
+                                        <input required type="text" name="title" class="span11" placeholder="Başlık" />
                                     </div>
                                 </div>
                                 <div class="control-group">
@@ -50,9 +50,9 @@
                                 </div>
 
                                 <div class="control-group">
-                                    <label class="control-label">Detail</label>
+                                    <label class="control-label">Detay</label>
                                     <div class="controls">
-                                    <textarea class="form-textarea" name="detail" placeholder="Detail" >
+                                    <textarea class="form-textarea" name="detail" placeholder="Detay" >
 
                                     </textarea>
                                         <script>
@@ -61,7 +61,7 @@
                                     </div>
                                 </div>
                                 <div class="control-group" >
-                                    <label class="control-label">Status</label>
+                                    <label class="control-label">Durum</label>
                                     <div class="controls">
                                         <select name="status" >
                                             <option value="True">True</option>
@@ -70,7 +70,7 @@
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Image</label>
+                                    <label class="control-label">Resim</label>
                                     <div class="controls">
                                         <input required name="image" type="file" />
                                     </div>
@@ -82,7 +82,7 @@
                                     </div>
                                 </div>
                                 <div class="form-actions">
-                                    <button type="submit" class="btn btn-success">Add Content</button>
+                                    <button type="submit" class="btn btn-success">İçeriği Ekle</button>
                                 </div>
                             </form>
                         </div>

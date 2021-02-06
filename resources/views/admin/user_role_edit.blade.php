@@ -11,7 +11,7 @@
         <td>{{ $data->id }}</td>
     </tr>
     <tr>
-        <td>Name</td>
+        <td>İsim</td>
         <td>{{ $data->name }}</td>
     </tr>
     <tr>
@@ -22,13 +22,13 @@
         <div class="controls">
             <table>
                 <tr>
-                    <td style="text-align: center" colspan="2">Roles</td>
+                    <td style="text-align: center" colspan="2">Yetkiler</td>
                 </tr>
                 @foreach($data->roles as $rl)
                     <tr>
                         <td style="width:200px;">{{$rl->name}}</td>
                         <td><a href="{{ route("admin_user_role_delete",['user_id'=>$data->id,'role_id'=>$rl->id]) }}"
-                               onclick="return confirm('Are You Sure To Delete')">Delete</a></td>
+                               onclick="return confirm('Are You Sure To Delete')">Kaldır</a></td>
                     </tr>
                 @endforeach
             </table>
@@ -47,6 +47,6 @@
                 @endif
             @endforeach
         </select>
-        <button class="btn btn-success">Add Role</button>
+        <button class="btn btn-primary">Yetki Ver</button>
     </form>
 </table>

@@ -5,41 +5,41 @@
 
     <div id="content">
         <div id="content-header">
-            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-                <a href="{{ route("admin_faq")}}" class="current">Categories</a> </div>
-            <h1>faq Add</h1>
+            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Ana Sayfa</a>
+                <a href="{{ route("admin_faq")}}" class="current">Sıkça Sorulan Sorular</a> </div>
+            <h1>SSS Ekleme</h1>
         </div>
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="span6">
                     <div class="widget-box">
                         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                            <h5>faq-info</h5>
+                            <h5>SSS-Bilgileri</h5>
                         </div>
                         <div class="widget-content nopadding">
 
                             <form enctype="multipart/form-data" action="{{ route("admin_faq_store") }}" method="post" class="form-horizontal">
                                 @csrf
                                 <div class="control-group">
-                                    <label class="control-label">Question</label>
+                                    <label class="control-label">Soru</label>
                                     <div class="controls">
-                                        <input required type="text" name="question" class="span11" placeholder="Question" />
+                                        <input required type="text" name="question" class="span11" placeholder="Soru" />
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Answer</label>
+                                    <label class="control-label">Cevap</label>
                                     <div class="controls">
-                                        <input type="text" name="answer" class="span11" placeholder="Answer" />
+                                        <input type="text" name="answer" class="span11" placeholder="Cevap" />
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <label class="control-label">Position</label>
+                                    <label class="control-label">Sıra</label>
                                     <div class="controls">
-                                        <input type="number" name="position" class="span11" placeholder="Position"  />
+                                        <input type="number" name="position" class="span11" placeholder="Sıra"  />
                                     </div>
                                 </div>
                                 <div class="control-group" >
-                                    <label class="control-label">Status</label>
+                                    <label class="control-label">Durum</label>
                                     <div class="controls">
                                         <select name="status" >
                                             <option value="True">True</option>
@@ -48,7 +48,7 @@
                                     </div>
                                 </div>
                                 <div class="form-actions">
-                                    <button type="submit" class="btn btn-success">Add FAQ</button>
+                                    <button type="submit" class="btn btn-success">Ekle</button>
                                 </div>
                             </form>
                         </div>

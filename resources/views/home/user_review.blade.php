@@ -42,7 +42,7 @@
                                 <td>{{$rs->review}}</td>
                                 <td>{{$rs->status}}</td>
                                 <td>{{$rs->created_at}}</td>
-                                <td> <a href="{{ route("user_review_destroy",['id'=>$rs->id]) }}" onclick="return confirm('Are You Sure To Delete')" class="btn btn-danger btn-mini" style="float: right;">Delete</a>
+                                <td> <a href="{{ route("user_review_destroy",['id'=>$rs->id]) }}" onclick="return confirm('Are You Sure To Delete')" class="btn btn-danger btn-mini" style="float: right;">SİL</a>
                                 </td>
                             </tr>
                         @endforeach

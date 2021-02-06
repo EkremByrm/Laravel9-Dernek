@@ -18,7 +18,7 @@
             @error('review')<span class="text-danger">{{$message}}</span>@enderror
         </div>
 
-        <button type="submit" class="btn btn-default aa-review-submit">Submit</button>
+        <button type="submit" class="btn btn-default aa-review-submit">Yorum Yap</button>
     </form>
 </div>
 

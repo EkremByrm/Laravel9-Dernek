@@ -5,15 +5,15 @@
 
     <div id="content">
         <div id="content-header">
-            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-                <a href="{{ route("admin_user")}}" class="current">Contents</a> </div>
-            <h1>Users Panel</h1>
+            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Ana Sayfa</a>
+                <a href="{{ route("admin_user")}}" class="current">Üyeler</a> </div>
+            <h1>Üye Yönetimi</h1>
         </div>
 
         <div class="container-fluid">
             <div class="widget-box">
                 <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-                    <h5>User List</h5>
+                    <h5>Üye Listesi</h5>
 
                   </div>
                 <div class="widget-content nopadding">
@@ -22,12 +22,12 @@
                         <tr>
                             <th>ID</th>
                             <th></th>
-                            <th>Name</th>
+                            <th>İsim</th>
                             <th>Email</th>
-                            <th>Phone</th>
+                            <th>Tel</th>
                             <th>Adress</th>
-                            <th>Roles</th>
-                            <th></th>
+                            <th>Yetki</th>
+                            <th>İşlem</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -36,7 +36,7 @@
                             <tr class="gradeX">
                                 <td>{{$rs->id}}</td>
                                 <td>@if($rs->profile_photo_path)
-                                        <img style="width:60px; height:60px;border:1px solid black;border-radius: 4px;" src="{{Storage::url($rs->profile_photo_path)}}">
+                                        <img style="width:60px; height:60px;border:1px solid black;border-radius: 40px;" src="{{Storage::url($rs->profile_photo_path)}}">
                                     @endif
                                 </td>
                                 <td>{{$rs->name}}</td>
@@ -57,17 +57,17 @@
                                                    onclick=" return  !window.open(this.href,'targetWindow',
                                                'toolbar=no,location=center,status=no,menubar=no,scrollbars=yes,' +
                                                 'resizable=no,width=600,height=400,top=200px,left=300px')" >
-                                                    Add</a> </td>
+                                                    Ekle</a> </td>
                                         </tr>
                                     </table>
 
                                 </td>
-                                <td style="width:150px;">
+                                <td style="width:100px;">
                                     <a href="{{ route("admin_user_edit",['id'=>$rs->id]) }}"
                                        onclick=" return  !window.open(this.href,'targetWindow',
                                                'toolbar=no,location=center,status=no,menubar=no,scrollbars=yes,' +
-                                                'resizable=no,width=600,height=500,top=100px,left=100px')" class="btn btn-primary btn-mini">Edit</a>
-                                    <a href="{{ route("admin_user_destroy",['id'=>$rs->id]) }}" onclick="return confirm('Are You Sure To Delete')" class="btn btn-danger btn-mini" style="float: right;">Delete</a>
+                                                'resizable=no,width=600,height=500,top=100px,left=100px')" class="btn btn-primary btn-mini">Düzenle</a>
+                                    <a href="{{ route("admin_user_destroy",['id'=>$rs->id]) }}" onclick="return confirm('Are You Sure To Delete')" class="btn btn-danger btn-mini" style="float: right;">Sil</a>
                                 </td>
                             </tr>
                         @endforeach
@@ -82,14 +82,4 @@
 
     </div>
 
-@endsection
-@section("css_end")
-    <link rel="stylesheet" href="{{ asset("assets/admin")}}/css/uniform.css" />
-    <link rel="stylesheet" href="{{ asset("assets/admin")}}/css/select2.css" />
-@endsection
-@section("js_end")
-    <script src="{{ asset("assets/admin")}}/js/select2.min.js"></script>
-    <script src="{{ asset("assets/admin")}}/js/jquery.dataTables.min.js"></script>
-    <script src="{{ asset("assets/admin")}}/js/matrix.js"></script>
-    <script src="{{ asset("assets/admin")}}/js/matrix.tables.js"></script>
 @endsection

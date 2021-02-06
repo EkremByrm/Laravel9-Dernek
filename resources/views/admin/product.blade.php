@@ -5,28 +5,28 @@
 
     <div id="content">
         <div id="content-header">
-            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a>
-                <a href="{{ route("admin_product")}}" class="current">Contents</a> </div>
-            <h1>Content Panel</h1>
+            <div id="breadcrumb"> <a href="{{ route("adminhome")}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Ana Sayfa</a>
+                <a href="{{ route("admin_product")}}" class="current">İçerikler</a> </div>
+            <h1>İçerik Yönetimi</h1>
         </div>
         <div class="container-fluid">
             <div class="widget-box">
                 <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-                    <h5>Category List</h5>
+                    <h5>İçerik Listesi</h5>
 
-                    <a class="btn btn-success " href="{{route("admin_product_create")}}" style="margin:5px;">Add Content</a>
+                    <a class="btn btn-inverse " href="{{route("admin_product_create")}}" style="margin:5px;">İçerik Ekle</a>
                 </div>
                 <div class="widget-content nopadding">
                     <table class="table table-bordered data-table">
                         <thead>
                         <tr>
                             <th>ID</th>
-                            <th>User</th>
-                            <th>Category</th>
-                            <th>Title</th>
-                            <th>Image</th>
-                            <th>Galery</th>
-                            <th>Status</th>
+                            <th>Ekleyen Üye</th>
+                            <th>Kategori</th>
+                            <th>Başlık</th>
+                            <th>Resim</th>
+                            <th>Galeri</th>
+                            <th>Durum</th>
                             <th></th>
                         </tr>
                         </thead>
@@ -42,12 +42,12 @@
                                     >{{$rs->user->name}}</a></td>
                                 <td>{{$rs->category->title}}</td>
                                 <td>{{$rs->title}}</td>
-                                <td align="center" style="text-align: center;"><img src="{{Storage::url($rs->image) }}" width="80px" height="80px"></td>
+                                <td align="center" style="text-align: center;"><img src="{{Storage::url($rs->image) }}" width="150px" height="120px"></td>
                                 <td style="width:55px; "><a href="{{ route('admin_product_image',['id'=>$rs->id]) }}"><img src="/assets/galery.png" width="50px" height="50px"></a></td>
                                 <td>{{$rs->status}}</td>
                                 <td style="width:100px;">
-                                    <a href="{{ route("admin_product_edit",['id'=>$rs->id]) }}" class="btn btn-primary btn-mini">Edit</a>
-                                    <a href="{{ route("admin_product_destroy",['id'=>$rs->id]) }}" onclick="return confirm('Are You Sure To Delete')" class="btn btn-danger btn-mini" style="float: right;">Delete</a>
+                                    <a href="{{ route("admin_product_edit",['id'=>$rs->id]) }}" class="btn btn-primary btn-mini">Düzenle</a>
+                                    <a href="{{ route("admin_product_destroy",['id'=>$rs->id]) }}" onclick="return confirm('Are You Sure To Delete')" class="btn btn-danger btn-mini" style="float: right;">Sil</a>
                                 </td>
                             </tr>
                         @endforeach
@@ -62,14 +62,4 @@
 
     </div>
 
-@endsection
-@section("css_end")
-    <link rel="stylesheet" href="{{ asset("assets/admin")}}/css/uniform.css" />
-    <link rel="stylesheet" href="{{ asset("assets/admin")}}/css/select2.css" />
-@endsection
-@section("js_end")
-    <script src="{{ asset("assets/admin")}}/js/select2.min.js"></script>
-    <script src="{{ asset("assets/admin")}}/js/jquery.dataTables.min.js"></script>
-    <script src="{{ asset("assets/admin")}}/js/matrix.js"></script>
-    <script src="{{ asset("assets/admin")}}/js/matrix.tables.js"></script>
 @endsection

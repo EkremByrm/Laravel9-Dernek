@@ -6,21 +6,11 @@
     <header id="header" class="hoc clear">
         <!-- ################################################################################################ -->
         <div id="logo" class="one_quarter first">
-            <h1><a href="/"><span>H</span>asan<span>D</span>erneği</a></h1>
-        </div>
-
-        <div class="three_quarter">
-            <ul class="nospace clear">
-                <li class="one_third first">
-                    <div class="block clear"><a href="#"><i class="fas fa-phone"></i></a> <span><strong>Bizi arayın:</strong> {{$setting->phone}}</span></div>
-                </li>
-                <li class="one_third">
-                    <div class="block clear"><a href="#"><i class="fas fa-envelope"></i></a> <span><strong>Mail ile ulaşın:</strong> {{$setting->email}}</span></div>
-                </li>
-                <li class="one_third">
-                    <div class="block clear"><a href="#"><i class="fas fa-clock"></i></a> <span><strong> Pzt. - Cmt.:</strong> 08.00am - 18.00pm</span></div>
-                </li>
-            </ul>
+            <div style="width: 100%;overflow: hidden;height: 80px;">
+                <a href="/">
+                    <img src="/assets/logo.png" style="width:150px;margin-top: -35px;" alt="">
+                </a>
+            </div>
         </div>
         <!-- ################################################################################################ -->
     </header>

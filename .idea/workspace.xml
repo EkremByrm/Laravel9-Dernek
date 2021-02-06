@@ -158,7 +158,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -198,6 +198,7 @@
       <workItem from="1612630198507" duration="173000" />
       <workItem from="1612630376614" duration="303000" />
       <workItem from="1612632266639" duration="550000" />
+      <workItem from="1612632831733" duration="116000" />
     </task>
     <task id="LOCAL-00001" summary="2. düzeltme">
       <created>1610298605427</created>
@@ -241,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612632361871</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Düzenleme 22.1">
+      <created>1612632845565</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1612632845565</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,12 +268,16 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/laravel_dernek" />
+    </ignored-roots>
     <MESSAGE value="2. düzeltme" />
     <MESSAGE value="14. video son" />
     <MESSAGE value="düzenleme 17.1" />
     <MESSAGE value="düzenleme 19" />
     <MESSAGE value="Duzenleme 22" />
     <MESSAGE value="Düzenleme 22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Düzenleme 22" />
+    <MESSAGE value="Düzenleme 22.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Düzenleme 22.1" />
   </component>
 </project>

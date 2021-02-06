@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2046b2cd-8c63-4b69-b3e5-4d0e20ff21c5" name="Default Changelist" comment="14. video son" />
+    <list default="true" id="2046b2cd-8c63-4b69-b3e5-4d0e20ff21c5" name="Default Changelist" comment="Düzenleme 22">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +15,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -194,6 +197,7 @@
       <workItem from="1612623502493" duration="47000" />
       <workItem from="1612630198507" duration="173000" />
       <workItem from="1612630376614" duration="303000" />
+      <workItem from="1612632266639" duration="550000" />
     </task>
     <task id="LOCAL-00001" summary="2. düzeltme">
       <created>1610298605427</created>
@@ -230,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612630632572</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Düzenleme 22">
+      <created>1612632361871</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612632361871</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +265,7 @@
     <MESSAGE value="düzenleme 17.1" />
     <MESSAGE value="düzenleme 19" />
     <MESSAGE value="Duzenleme 22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Duzenleme 22" />
+    <MESSAGE value="Düzenleme 22" />
+    <option name="LAST_COMMIT_MESSAGE" value="Düzenleme 22" />
   </component>
 </project>

@@ -32,8 +32,8 @@
                                 <label class="control-label">Category</label>
                                 <div class="controls">
                                     <select class="span6" name="category_id">
-                                        @foreach($category_list as $rs)
-                                            @if($rs->id == $data->category_id)
+                                        @foreach($category_list as $rs)//ne kadar categori varsa göster
+                                            @if($rs->id == $data->category_id)//user ıd ile erişim
                                                 <option selected value="{{ $rs->id }}">{{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title) }}</option>
                                             @else
                                                 <option  value="{{ $rs->id }}">{{ \App\Http\Controllers\Admin\CategoryController::getParentsTree($rs,$rs->title) }}</option>

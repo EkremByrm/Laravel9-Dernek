@@ -22,7 +22,7 @@
     <div class="wrapper row3">
         <main class="hoc container clear">
             @include("home.usermenu")
-            <div class="content three_quarter">
+            <div class="content three_quarter">//ekleme işlemi
                 <h1>İçerik Ekleme</h1>
                 <div class="scrollable">
                     <div class="three_quarter">

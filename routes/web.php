@@ -70,7 +70,7 @@ Route::middleware("admin")->prefix('admin')->group(function () {
         Route::get('/show/{id}', [App\Http\Controllers\Admin\FaqController::class, 'show'])->name('admin_faq_show');
         Route::get('/destroy/{id}', [App\Http\Controllers\Admin\FaqController::class, 'destroy'])->name('admin_faq_destroy');
 
-    });
+    });//contact routes
     Route::prefix('message')->group(function () {
         Route::get('/', [App\Http\Controllers\Admin\MessageController::class, 'index'])->name('admin_message');
         Route::get('/create', [App\Http\Controllers\Admin\MessageController::class, 'create'])->name('admin_message_create');
@@ -112,8 +112,8 @@ Route::middleware("admin")->prefix('admin')->group(function () {
 
     });
 
-//user Routes
-/*
+//user işlermleri için route
+
 Route::middleware("auth")->prefix('user')->namespace("user")->group(function () {
     Route::get('/profile', [UserController::class, 'index'])->name('userprofile');
     Route::get('/myreview', [UserController::class, 'myreview'])->name('myreview');

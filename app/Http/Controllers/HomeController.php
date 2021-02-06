@@ -86,7 +86,7 @@ class HomeController extends Controller
             return redirect()->route('productlist',[$search]);
         }
     }
-    public function productlist($search){
+    public function productlist($search){//içerik sorgu
         $datalist=Product::where("title",'like','%'.$search.'%')->get();
         if(isEmpty($datalist)){
             return view('home.content_list',[
@@ -96,7 +96,7 @@ class HomeController extends Controller
         }
 
         else{
-            return view('home.content_list',[
+            return view('home.content_list',[//!!!!
                 'datalist'=>$datalist,
                 'search'=>$search
             ]);
@@ -122,11 +122,11 @@ class HomeController extends Controller
             'data'=>$data
         ]);
     }
-    public function login(){
+    public function login(){//login tru sonucu gelince adminpage e yönlendirme
         return view("admin.login");
 
     }
-    public function login_check(Request $request){
+    public function login_check(Request $request){//kontrol sorgusu
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
@@ -135,7 +135,7 @@ class HomeController extends Controller
             return redirect()->route('adminhome');
         }
 
-        return back()->withErrors([
+        return back()->withErrors([//false post edilirse çalışıcak
             'email' => 'Email ve ya şifre yanlış.',
         ]);
     }

@@ -1,4 +1,4 @@
-@extends('layouts.home')
+@extends('layouts.home')/bu kısıma geri dön (her blade de böyle yapmamıstık dikkat et)
 
 @section('title',"İletişim")
 @section('keywords',"İletişim")
@@ -17,7 +17,7 @@
         <div class="gezinme" style="width:100%;height:50px;">
             <ul style="list-style: none;">
                 <li><a href="/">Anasayfa</a>&nbsp;/</li>
-                <li class="active">
+                <li class="active">/ hakkımızda gibi tasarlandı
                     &nbsp; İletişim
                 </li>
             </ul>
@@ -29,8 +29,8 @@
                 <!-- ################################################################################################ -->
                 <div class="group btmspace-50 demo">
                     <div class="one_half first">
-                        @include("home.message")
-                        <form class="form-inline" method="post" action="{{ route("sendmessage") }}">
+                        @include("home.message")/yorum yapmak için
+                        <form class="form-inline" method="post" action="{{ route("sendmessage") }}">/web blade e path ettik
                             @csrf
                                     <div class="form-group">
                                         <label for="name">İsim:</label>

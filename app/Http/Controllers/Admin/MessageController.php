@@ -76,7 +76,7 @@ class MessageController extends Controller
      */
     public function update(Request $request, Message $message,$id)
     {
-        $data= Message::find($id);
+        $data= Message::find($id); //hata düzelt!!
         $data->status=$request->status;
         $data->note=$request->note;
         $data->save();

@@ -1,8 +1,8 @@
-@extends('layouts.admin')
-
-@section('title', 'Admin Panel Home Page')
-
+@extends("layouts.admin")
+@section('title','Admin Anasayfa')
 
 @section('content')
-    @include('admin._content')
+
+    @include("admin._content")
+
 @endsection

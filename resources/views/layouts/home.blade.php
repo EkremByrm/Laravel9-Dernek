@@ -1,36 +1,52 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
+
+<!DOCTYPE html>
+<!--
+Template Name: Wavefire
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Günder Dernek</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="assets/site.webmanifest">
-    <link rel="shortcut icon" type="assets/image/x-icon" href="assets/img/favicon.ico">
+    <title>@yield('title')</title>
+    <meta name="description" content="@yield('description')">
+    <meta name="keywords" content="@yield('keywords')">
+    <meta name="author" content="@yield('author')">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="{{ asset("assets/home") }}/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/ticker-style.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/slicknav.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    @yield("css")
+    @yield("js")
 </head>
-<body>
-@include('home._header')
-@include('home._slider')
-@section('content')
-    içerik alanı
-@show
-@include('home._footer')
-@yield('footerjs')
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
 
+@include('home._header')
+@yield("menu")
+@yield("slider")
+@yield("content")
+@include("home._footer")
+@yield("jss")
+
+<link href="{{ asset("assets/home") }}/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<style>
+    .gezinme ul li{
+         float: left !important;
+    }
+    .gezinme ul .active {
+        color:#1a202c !important;
+    }
+    .span6 {
+        width: 100%;
+        height: 30px !important;
+        margin-bottom: 5px;
+    }
+</style>
 </body>
 </html>

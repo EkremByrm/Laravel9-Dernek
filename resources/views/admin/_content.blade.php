@@ -1,427 +1,267 @@
-<!-- **********************************************************************************************************************************************************
-        MAIN CONTENT
-        *********************************************************************************************************************************************************** -->
-<!--main content start-->
-<section id="main-content">
-    <section class="wrapper">
-        <div class="row">
-            <div class="col-lg-9 main-chart">
-                <!--CUSTOM CHART START -->
-                <div class="border-head">
-                    <h3>USER VISITS</h3>
-                </div>
-                <div class="custom-bar-chart">
-                    <ul class="y-axis">
-                        <li><span>10.000</span></li>
-                        <li><span>8.000</span></li>
-                        <li><span>6.000</span></li>
-                        <li><span>4.000</span></li>
-                        <li><span>2.000</span></li>
-                        <li><span>0</span></li>
-                    </ul>
-                    <div class="bar">
-                        <div class="title">JAN</div>
-                        <div class="value tooltips" data-original-title="8.500" data-toggle="tooltip" data-placement="top">85%</div>
-                    </div>
-                    <div class="bar ">
-                        <div class="title">FEB</div>
-                        <div class="value tooltips" data-original-title="5.000" data-toggle="tooltip" data-placement="top">50%</div>
-                    </div>
-                    <div class="bar ">
-                        <div class="title">MAR</div>
-                        <div class="value tooltips" data-original-title="6.000" data-toggle="tooltip" data-placement="top">60%</div>
-                    </div>
-                    <div class="bar ">
-                        <div class="title">APR</div>
-                        <div class="value tooltips" data-original-title="4.500" data-toggle="tooltip" data-placement="top">45%</div>
-                    </div>
-                    <div class="bar">
-                        <div class="title">MAY</div>
-                        <div class="value tooltips" data-original-title="3.200" data-toggle="tooltip" data-placement="top">32%</div>
-                    </div>
-                    <div class="bar ">
-                        <div class="title">JUN</div>
-                        <div class="value tooltips" data-original-title="6.200" data-toggle="tooltip" data-placement="top">62%</div>
-                    </div>
-                    <div class="bar">
-                        <div class="title">JUL</div>
-                        <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
-                    </div>
-                </div>
-                <!--custom chart end-->
-                <div class="row mt">
-                    <!-- SERVER STATUS PANELS -->
-                    <div class="col-md-4 col-sm-4 mb">
-                        <div class="grey-panel pn donut-chart">
-                            <div class="grey-header">
-                                <h5>SERVER LOAD</h5>
-                            </div>
-                            <canvas id="serverstatus01" height="120" width="120"></canvas>
-                            <script>
-                                var doughnutData = [{
-                                    value: 70,
-                                    color: "#FF6B6B"
-                                },
-                                    {
-                                        value: 30,
-                                        color: "#fdfdfd"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("serverstatus01").getContext("2d")).Doughnut(doughnutData);
-                            </script>
-                            <div class="row">
-                                <div class="col-sm-6 col-xs-6 goleft">
-                                    <p>Usage<br/>Increase:</p>
-                                </div>
-                                <div class="col-sm-6 col-xs-6">
-                                    <h2>21%</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /grey-panel -->
-                    </div>
-                    <!-- /col-md-4-->
-                    <div class="col-md-4 col-sm-4 mb">
-                        <div class="darkblue-panel pn">
-                            <div class="darkblue-header">
-                                <h5>DROPBOX STATICS</h5>
-                            </div>
-                            <canvas id="serverstatus02" height="120" width="120"></canvas>
-                            <script>
-                                var doughnutData = [{
-                                    value: 60,
-                                    color: "#1c9ca7"
-                                },
-                                    {
-                                        value: 40,
-                                        color: "#f68275"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("serverstatus02").getContext("2d")).Doughnut(doughnutData);
-                            </script>
-                            <p>April 17, 2014</p>
-                            <footer>
-                                <div class="pull-left">
-                                    <h5><i class="fa fa-hdd-o"></i> 17 GB</h5>
-                                </div>
-                                <div class="pull-right">
-                                    <h5>60% Used</h5>
-                                </div>
-                            </footer>
-                        </div>
-                        <!--  /darkblue panel -->
-                    </div>
-                    <!-- /col-md-4 -->
-                    <div class="col-md-4 col-sm-4 mb">
-                        <!-- REVENUE PANEL -->
-                        <div class="green-panel pn">
-                            <div class="green-header">
-                                <h5>REVENUE</h5>
-                            </div>
-                            <div class="chart mt">
-                                <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,464,655]"></div>
-                            </div>
-                            <p class="mt"><b>$ 17,980</b><br/>Month Income</p>
-                        </div>
-                    </div>
-                    <!-- /col-md-4 -->
-                </div>
-                <!-- /row -->
-                <div class="row">
-                    <!-- WEATHER PANEL -->
-                    <div class="col-md-4 mb">
-                        <div class="weather pn">
-                            <i class="fa fa-cloud fa-4x"></i>
-                            <h2>11ยบ C</h2>
-                            <h4>BUDAPEST</h4>
-                        </div>
-                    </div>
-                    <!-- /col-md-4-->
-                    <!-- DIRECT MESSAGE PANEL -->
-                    <div class="col-md-8 mb">
-                        <div class="message-p pn">
-                            <div class="message-header">
-                                <h5>DIRECT MESSAGE</h5>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 centered hidden-sm hidden-xs">
-                                    <img src="{{asset('assets')}}/admin/img/ui-danro.jpg" class="img-circle" width="65">
-                                </div>
-                                <div class="col-md-9">
-                                    <p>
-                                        <name>Dan Rogers</name>
-                                        sent you a message.
-                                    </p>
-                                    <p class="small">3 hours ago</p>
-                                    <p class="message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                                    <form class="form-inline" role="form">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="exampleInputText" placeholder="Reply Dan">
-                                        </div>
-                                        <button type="submit" class="btn btn-default">Send</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /Message Panel-->
-                    </div>
-                    <!-- /col-md-8  -->
-                </div>
-                <div class="row">
-                    <!-- TWITTER PANEL -->
-                    <div class="col-md-4 mb">
-                        <div class="twitter-panel pn">
-                            <i class="fa fa-twitter fa-4x"></i>
-                            <p>Dashio is here! Take a look and enjoy this new Bootstrap Dashboard theme.</p>
-                            <p class="user">@Alvrz_is</p>
-                        </div>
-                    </div>
-                    <!-- /col-md-4 -->
-                    <div class="col-md-4 mb">
-                        <!-- WHITE PANEL - TOP USER -->
-                        <div class="white-panel pn">
-                            <div class="white-header">
-                                <h5>TOP USER</h5>
-                            </div>
-                            <p><img src="{{asset('assets')}}/admin/img/ui-zac.jpg" class="img-circle" width="50"></p>
-                            <p><b>Zac Snider</b></p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <p class="small mt">MEMBER SINCE</p>
-                                    <p>2012</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <p class="small mt">TOTAL SPEND</p>
-                                    <p>$ 47,60</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /col-md-4 -->
-                    <div class="col-md-4 mb">
-                        <!-- INSTAGRAM PANEL -->
-                        <div class="instagram-panel pn">
-                            <i class="fa fa-instagram fa-4x"></i>
-                            <p>@THISISYOU<br/> 5 min. ago
-                            </p>
-                            <p><i class="fa fa-comment"></i> 18 | <i class="fa fa-heart"></i> 49</p>
-                        </div>
-                    </div>
-                    <!-- /col-md-4 -->
-                </div>
-                <!-- /row -->
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                        <div class="product-panel-2 pn">
-                            <div class="badge badge-hot">HOT</div>
-                            <img src="{{asset('assets')}}/admin/img/product.jpg" width="200" alt="">
-                            <h5 class="mt">Flat Pack Heritage</h5>
-                            <h6>TOTAL SALES: 1388</h6>
-                            <button class="btn btn-small btn-theme04">FULL REPORT</button>
-                        </div>
-                    </div>
-                    <!-- /col-md-4 -->
-                    <!--  PROFILE 02 PANEL -->
-                    <div class="col-lg-4 col-md-4 col-sm-4 mb">
-                        <div class="content-panel pn">
-                            <div id="profile-02">
-                                <div class="user">
-                                    <img src="{{asset('assets')}}/admin/img/friends/fr-06.jpg" class="img-circle" width="80">
-                                    <h4>DJ SHERMAN</h4>
-                                </div>
-                            </div>
-                            <div class="pr2-social centered">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                            </div>
-                        </div>
-                        <!-- /panel -->
-                    </div>
-                    <!--/ col-md-4 -->
-                    <div class="col-md-4 col-sm-4 mb">
-                        <div class="green-panel pn">
-                            <div class="green-header">
-                                <h5>DISK SPACE</h5>
-                            </div>
-                            <canvas id="serverstatus03" height="120" width="120"></canvas>
-                            <script>
-                                var doughnutData = [{
-                                    value: 60,
-                                    color: "#2b2b2b"
-                                },
-                                    {
-                                        value: 40,
-                                        color: "#fffffd"
-                                    }
-                                ];
-                                var myDoughnut = new Chart(document.getElementById("serverstatus03").getContext("2d")).Doughnut(doughnutData);
-                            </script>
-                            <h3>60% USED</h3>
-                        </div>
-                    </div>
-                    <!-- /col-md-4 -->
-                </div>
-                <!-- /row -->
-            </div>
-            <!-- /col-lg-9 END SECTION MIDDLE -->
-            <!-- **********************************************************************************************************************************************************
-                RIGHT SIDEBAR CONTENT
-                *********************************************************************************************************************************************************** -->
-            <div class="col-lg-3 ds">
-                <!--COMPLETED ACTIONS DONUTS CHART-->
-                <div class="donut-main">
-                    <h4>COMPLETED ACTIONS & PROGRESS</h4>
-                    <canvas id="newchart" height="130" width="130"></canvas>
-                    <script>
-                        var doughnutData = [{
-                            value: 70,
-                            color: "#4ECDC4"
-                        },
-                            {
-                                value: 30,
-                                color: "#fdfdfd"
-                            }
-                        ];
-                        var myDoughnut = new Chart(document.getElementById("newchart").getContext("2d")).Doughnut(doughnutData);
-                    </script>
-                </div>
-                <!--NEW EARNING STATS -->
-                <div class="panel terques-chart">
-                    <div class="panel-body">
-                        <div class="chart">
-                            <div class="centered">
-                                <span>TODAY EARNINGS</span>
-                                <strong>$ 890,00 | 15%</strong>
-                            </div>
-                            <br>
-                            <div class="sparkline" data-type="line" data-resize="true" data-height="75" data-width="90%" data-line-width="1" data-line-color="#fff" data-spot-color="#fff" data-fill-color="" data-highlight-line-color="#fff" data-spot-radius="4" data-data="[200,135,667,333,526,996,564,123,890,564,455]"></div>
-                        </div>
-                    </div>
-                </div>
-                <!--new earning end-->
-                <!-- RECENT ACTIVITIES SECTION -->
-                <h4 class="centered mt">RECENT ACTIVITY</h4>
-                <!-- First Activity -->
-                <div class="desc">
-                    <div class="thumb">
-                        <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
-                    </div>
-                    <div class="details">
-                        <p>
-                            <muted>Just Now</muted>
-                            <br/>
-                            <a href="#">Paul Rudd</a> purchased an item.<br/>
-                        </p>
-                    </div>
-                </div>
-                <!-- Second Activity -->
-                <div class="desc">
-                    <div class="thumb">
-                        <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
-                    </div>
-                    <div class="details">
-                        <p>
-                            <muted>2 Minutes Ago</muted>
-                            <br/>
-                            <a href="#">James Brown</a> subscribed to your newsletter.<br/>
-                        </p>
-                    </div>
-                </div>
-                <!-- Third Activity -->
-                <div class="desc">
-                    <div class="thumb">
-                        <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
-                    </div>
-                    <div class="details">
-                        <p>
-                            <muted>3 Hours Ago</muted>
-                            <br/>
-                            <a href="#">Diana Kennedy</a> purchased a year subscription.<br/>
-                        </p>
-                    </div>
-                </div>
-                <!-- Fourth Activity -->
-                <div class="desc">
-                    <div class="thumb">
-                        <span class="badge bg-theme"><i class="fa fa-clock-o"></i></span>
-                    </div>
-                    <div class="details">
-                        <p>
-                            <muted>7 Hours Ago</muted>
-                            <br/>
-                            <a href="#">Brando Page</a> purchased a year subscription.<br/>
-                        </p>
-                    </div>
-                </div>
-                <!-- USERS ONLINE SECTION -->
-                <h4 class="centered mt">TEAM MEMBERS ONLINE</h4>
-                <!-- First Member -->
-                <div class="desc">
-                    <div class="thumb">
-                        <img class="img-circle" src="img/ui-divya.jpg" width="35px" height="35px" align="">
-                    </div>
-                    <div class="details">
-                        <p>
-                            <a href="#">DIVYA MANIAN</a><br/>
-                            <muted>Available</muted>
-                        </p>
-                    </div>
-                </div>
-                <!-- Second Member -->
-                <div class="desc">
-                    <div class="thumb">
-                        <img class="img-circle" src="img/ui-sherman.jpg" width="35px" height="35px" align="">
-                    </div>
-                    <div class="details">
-                        <p>
-                            <a href="#">DJ SHERMAN</a><br/>
-                            <muted>I am Busy</muted>
-                        </p>
-                    </div>
-                </div>
-                <!-- Third Member -->
-                <div class="desc">
-                    <div class="thumb">
-                        <img class="img-circle" src="img/ui-danro.jpg" width="35px" height="35px" align="">
-                    </div>
-                    <div class="details">
-                        <p>
-                            <a href="#">DAN ROGERS</a><br/>
-                            <muted>Available</muted>
-                        </p>
-                    </div>
-                </div>
-                <!-- Fourth Member -->
-                <div class="desc">
-                    <div class="thumb">
-                        <img class="img-circle" src="img/ui-zac.jpg" width="35px" height="35px" align="">
-                    </div>
-                    <div class="details">
-                        <p>
-                            <a href="#">Zac Sniders</a><br/>
-                            <muted>Available</muted>
-                        </p>
-                    </div>
-                </div>
-                <!-- CALENDAR-->
-                <div id="calendar" class="mb">
-                    <div class="panel green-panel no-margin">
-                        <div class="panel-body">
-                            <div id="date-popover" class="popover top" style="cursor: pointer; disadding: block; margin-left: 33%; margin-top: -50px; width: 175px;">
-                                <div class="arrow"></div>
-                                <h3 class="popover-title" style="disadding: none;"></h3>
-                                <div id="date-popover-content" class="popover-content"></div>
-                            </div>
-                            <div id="my-calendar"></div>
-                        </div>
-                    </div>
-                </div>
-                <!-- / calendar -->
-            </div>
-            <!-- /col-lg-3 -->
+<!--main-container-part-->
+<div id="content">
+    <!--breadcrumbs-->
+    <div id="content-header">
+        <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
+    </div>
+    <!--End-breadcrumbs-->
+
+    <!--Action boxes-->
+    <div class="container-fluid">
+        <div class="quick-actions_homepage">
+            <ul class="quick-actions">
+                <li class="bg_lb"> <a href="/"> <i class="icon-dashboard"></i> Siteye Git </a> </li>
+                <li class="bg_lg span3"> <a href="{{route("admin_category")}}"> <i class="icon-circle"></i> Category</a> </li>
+                <li class="bg_ly"> <a href="{{route("admin_product")}}"> <i class="icon-print"></i> Content </a> </li>
+                <li class="bg_lo"> <a href="{{route("admin_user")}}"> <i class="icon-user"></i> Users</a> </li>
+                <li class="bg_ls"> <a href="{{route("admin_faq")}}"> <i class="icon-question-sign"></i>FAQ</a> </li>
+
+            </ul>
         </div>
-        <!-- /row -->
-    </section>
-</section>
-<!--main content end-->
+        <!--End-Action boxes-->
+
+        <hr/>
+        <div class="row-fluid">
+            <div class="span6">
+                <div class="widget-box">
+                    <div class="widget-title bg_ly" data-toggle="collapse" href="#collapseG2"><span class="icon"><i class="icon-chevron-down"></i></span>
+                        <h5>Latest Posts</h5>
+                    </div>
+                    <div class="widget-content nopadding collapse in" id="collapseG2">
+                        <ul class="recent-posts">
+                            <li>
+                                <div class="user-thumb"> <img width="40" height="40" alt="User" src="{{asset('assets/admin')}}/img/demo/av1.jpg"> </div>
+                                <div class="article-post"> <span class="user-info"> By: john Deo / Date: 2 Aug 2012 / Time:09:27 AM </span>
+                                    <p><a href="#">This is a much longer one that will go on for a few lines.It has multiple paragraphs and is full of waffle to pad out the comment.</a> </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="user-thumb"> <img width="40" height="40" alt="User" src="{{asset('assets/admin')}}/img/demo/av2.jpg"> </div>
+                                <div class="article-post"> <span class="user-info"> By: john Deo / Date: 2 Aug 2012 / Time:09:27 AM </span>
+                                    <p><a href="#">This is a much longer one that will go on for a few lines.It has multiple paragraphs and is full of waffle to pad out the comment.</a> </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="user-thumb"> <img width="40" height="40" alt="User" src="{{asset('assets/admin')}}/img/demo/av4.jpg"> </div>
+                                <div class="article-post"> <span class="user-info"> By: john Deo / Date: 2 Aug 2012 / Time:09:27 AM </span>
+                                    <p><a href="#">This is a much longer one that will go on for a few lines.Itaffle to pad out the comment.</a> </p>
+                                </div>
+                            <li>
+                                <button class="btn btn-warning btn-mini">View All</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget-box">
+                    <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                        <h5>To Do list</h5>
+                    </div>
+                    <div class="widget-content">
+                        <div class="todo">
+                            <ul>
+                                <li class="clearfix">
+                                    <div class="txt"> Luanch This theme on Themeforest <span class="by label">Alex</span></div>
+                                    <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="txt"> Manage Pending Orders <span class="date badge badge-warning">Today</span> </div>
+                                    <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="txt"> MAke your desk clean <span class="by label">Admin</span></div>
+                                    <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="txt"> Today we celebrate the theme <span class="date badge badge-info">08.03.2013</span> </div>
+                                    <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                </li>
+                                <li class="clearfix">
+                                    <div class="txt"> Manage all the orders <span class="date badge badge-important">12.03.2013</span> </div>
+                                    <div class="pull-right"> <a class="tip" href="#" title="Edit Task"><i class="icon-pencil"></i></a> <a class="tip" href="#" title="Delete"><i class="icon-remove"></i></a> </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-box">
+                    <div class="widget-title"> <span class="icon"><i class="icon-ok"></i></span>
+                        <h5>Progress Box</h5>
+                    </div>
+                    <div class="widget-content">
+                        <ul class="unstyled">
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 81% Clicks <span class="pull-right strong">567</span>
+                                <div class="progress progress-striped ">
+                                    <div style="width: 81%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 72% Uniquie Clicks <span class="pull-right strong">507</span>
+                                <div class="progress progress-success progress-striped ">
+                                    <div style="width: 72%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-down-2 red"></span> 53% Impressions <span class="pull-right strong">457</span>
+                                <div class="progress progress-warning progress-striped ">
+                                    <div style="width: 53%;" class="bar"></div>
+                                </div>
+                            </li>
+                            <li> <span class="icon24 icomoon-icon-arrow-up-2 green"></span> 3% Online Users <span class="pull-right strong">8</span>
+                                <div class="progress progress-danger progress-striped ">
+                                    <div style="width: 3%;" class="bar"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="widget-box">
+                    <div class="widget-title bg_lo"  data-toggle="collapse" href="#collapseG3" > <span class="icon"> <i class="icon-chevron-down"></i> </span>
+                        <h5>News updates</h5>
+                    </div>
+                    <div class="widget-content nopadding updates collapse in" id="collapseG3">
+                        <div class="new-update clearfix"><i class="icon-ok-sign"></i>
+                            <div class="update-done"><a title="" href="#"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></a> <span>dolor sit amet, consectetur adipiscing eli</span> </div>
+                            <div class="update-date"><span class="update-day">20</span>jan</div>
+                        </div>
+                        <div class="new-update clearfix"> <i class="icon-gift"></i> <span class="update-notice"> <a title="" href="#"><strong>Congratulation Maruti, Happy Birthday </strong></a> <span>many many happy returns of the day</span> </span> <span class="update-date"><span class="update-day">11</span>jan</span> </div>
+                        <div class="new-update clearfix"> <i class="icon-move"></i> <span class="update-alert"> <a title="" href="#"><strong>Maruti is a Responsive Admin theme</strong></a> <span>But already everything was solved. It will ...</span> </span> <span class="update-date"><span class="update-day">07</span>Jan</span> </div>
+                        <div class="new-update clearfix"> <i class="icon-leaf"></i> <span class="update-done"> <a title="" href="#"><strong>Envato approved Maruti Admin template</strong></a> <span>i am very happy to approved by TF</span> </span> <span class="update-date"><span class="update-day">05</span>jan</span> </div>
+                        <div class="new-update clearfix"> <i class="icon-question-sign"></i> <span class="update-notice"> <a title="" href="#"><strong>I am alwayse here if you have any question</strong></a> <span>we glad that you choose our template</span> </span> <span class="update-date"><span class="update-day">01</span>jan</span> </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="span6">
+                <div class="widget-box widget-chat">
+                    <div class="widget-title bg_lb"> <span class="icon"> <i class="icon-comment"></i> </span>
+                        <h5>Chat Option</h5>
+                    </div>
+                    <div class="widget-content nopadding collapse in" id="collapseG4">
+                        <div class="chat-users panel-right2">
+                            <div class="panel-title">
+                                <h5>Online Users</h5>
+                            </div>
+                            <div class="panel-content nopadding">
+                                <ul class="contact-list">
+                                    <li id="user-Alex" class="online"><a href=""><img alt="" src="{{asset('assets/admin')}}/img/demo/av1.jpg" /> <span>Alex</span></a></li>
+                                    <li id="user-Linda"><a href=""><img alt="" src="{{asset('assets/admin')}}/img/demo/av2.jpg" /> <span>Linda</span></a></li>
+                                    <li id="user-John" class="online new"><a href=""><img alt="" src="{{asset('assets/admin')}}/img/demo/av3.jpg" /> <span>John</span></a><span class="msg-count badge badge-info">3</span></li>
+                                    <li id="user-Mark" class="online"><a href=""><img alt="" src="{{asset('assets/admin')}}/img/demo/av4.jpg" /> <span>Mark</span></a></li>
+                                    <li id="user-Maxi" class="online"><a href=""><img alt="" src="{{asset('assets/admin')}}/img/demo/av5.jpg" /> <span>Maxi</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chat-content panel-left2">
+                            <div class="chat-messages" id="chat-messages">
+                                <div id="chat-messages-inner"></div>
+                            </div>
+                            <div class="chat-message well">
+                                <button class="btn btn-success">Send</button>
+                                <span class="input-box">
+                <input type="text" name="msg-box" id="msg-box" />
+                </span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-box">
+                    <div class="widget-title"><span class="icon"><i class="icon-user"></i></span>
+                        <h5>Our Partner (Box with Fix height)</h5>
+                    </div>
+                    <div class="widget-content nopadding fix_hgt">
+                        <ul class="recent-posts">
+                            <li>
+                                <div class="user-thumb"> <img width="40" height="40" alt="User" src="{{asset('assets/admin')}}/img/demo/av1.jpg"> </div>
+                                <div class="article-post"> <span class="user-info">John Deo</span>
+                                    <p>Web Desginer &amp; creative Front end developer</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="user-thumb"> <img width="40" height="40" alt="User" src="{{asset('assets/admin')}}/img/demo/av2.jpg"> </div>
+                                <div class="article-post"> <span class="user-info">John Deo</span>
+                                    <p>Web Desginer &amp; creative Front end developer</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="user-thumb"> <img width="40" height="40" alt="User" src="{{asset('assets/admin')}}/img/demo/av4.jpg"> </div>
+                                <div class="article-post"> <span class="user-info">John Deo</span>
+                                    <p>Web Desginer &amp; creative Front end developer</p>
+                                </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion" id="collapse-group">
+                    <div class="accordion-group widget-box">
+                        <div class="accordion-heading">
+                            <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGOne" data-toggle="collapse"> <span class="icon"><i class="icon-magnet"></i></span>
+                                    <h5>Accordion Example 1</h5>
+                                </a> </div>
+                        </div>
+                        <div class="collapse in accordion-body" id="collapseGOne">
+                            <div class="widget-content"> It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end. </div>
+                        </div>
+                    </div>
+                    <div class="accordion-group widget-box">
+                        <div class="accordion-heading">
+                            <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGTwo" data-toggle="collapse"> <span class="icon"><i class="icon-magnet"></i></span>
+                                    <h5>Accordion Example 2</h5>
+                                </a> </div>
+                        </div>
+                        <div class="collapse accordion-body" id="collapseGTwo">
+                            <div class="widget-content">And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-group widget-box">
+                        <div class="accordion-heading">
+                            <div class="widget-title"> <a data-parent="#collapse-group" href="#collapseGThree" data-toggle="collapse"> <span class="icon"><i class="icon-magnet"></i></span>
+                                    <h5>Accordion Example 3</h5>
+                                </a> </div>
+                        </div>
+                        <div class="collapse accordion-body" id="collapseGThree">
+                            <div class="widget-content"> Waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget-box collapsible">
+                    <div class="widget-title"> <a data-toggle="collapse" href="#collapseOne"> <span class="icon"><i class="icon-arrow-right"></i></span>
+                            <h5>Toggle, Open by default, </h5>
+                        </a> </div>
+                    <div id="collapseOne" class="collapse in">
+                        <div class="widget-content"> This box is opened by default, paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end. </div>
+                    </div>
+                    <div class="widget-title"> <a data-toggle="collapse" href="#collapseTwo"> <span class="icon"><i class="icon-remove"></i></span>
+                            <h5>Toggle, closed by default</h5>
+                        </a> </div>
+                    <div id="collapseTwo" class="collapse">
+                        <div class="widget-content"> This box is now open </div>
+                    </div>
+                    <div class="widget-title"> <a data-toggle="collapse" href="#collapseThree"> <span class="icon"><i class="icon-remove"></i></span>
+                            <h5>Toggle, closed by default</h5>
+                        </a> </div>
+                    <div id="collapseThree" class="collapse">
+                        <div class="widget-content"> This box is now open </div>
+                    </div>
+                </div>
+                <div class="widget-box">
+                    <div class="widget-title">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab1">Tab1</a></li>
+                            <li><a data-toggle="tab" href="#tab2">Tab2</a></li>
+                            <li><a data-toggle="tab" href="#tab3">Tab3</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget-content tab-content">
+                        <div id="tab1" class="tab-pane active">
+                            <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment.</p>
+                            <img src="{{asset('assets/admin')}}/img/demo/demo-image1.jpg" alt="demo-image"/></div>
+                        <div id="tab2" class="tab-pane"> <img src="{{asset('assets/admin')}}/img/demo/demo-image2.jpg" alt="demo-image"/>
+                            <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment.</p>
+                        </div>
+                        <div id="tab3" class="tab-pane">
+                            <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. </p>
+                            <img src="{{asset('assets/admin')}}/img/demo/demo-image3.jpg" alt="demo-image"/></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--end-main-container-part-->

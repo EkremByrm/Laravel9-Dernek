@@ -1,46 +1,29 @@
 <!DOCTYPE html>
-<html lang="tr">
-
+<html lang="">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Dashboard">
-    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-    <title> @yield('title') </title>
-
-    <!-- Favicons -->
-    <link href="{{asset('assets')}}/admin/img/favicon.png" rel="icon">
-    <link href="{{asset('assets')}}/admin/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Bootstrap core CSS -->
-    <link href="{{asset('assets')}}/admin/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!--external css-->
-    <link href="{{asset('assets')}}/admin/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/admin/css/zabuto_calendar.css">
-    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/admin/lib/gritter/css/jquery.gritter.css" />
-    <!-- Custom styles for this template -->
-    <link href="{{asset('assets')}}/admin/css/style.css" rel="stylesheet">
-    <link href="{{asset('assets')}}/admin/css/style-responsive.css" rel="stylesheet">
-    <script src="{{asset('assets')}}/admin/lib/chart-master/Chart.js"></script>
-
-    <!-- =======================================================
-      Template Name: Dashio
-      Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
-      Author: TemplateMag.com
-      License: https://templatemag.com/license/
-    ======================================================= -->
-    @yield('css')
-    @yield('javascript')
+    <title>@yield('title')</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{asset("assets/admin")}}/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{asset("assets/admin")}}/css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="{{asset("assets/admin")}}/css/matrix-style.css" />
+    <link rel="stylesheet" href="{{asset("assets/admin")}}/css/matrix-media.css" />
+    <link href="{{asset("assets/admin")}}/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    @yield("css")
+    @yield("js")
 </head>
-
 <body>
-<section id="container">
-    @include('admin._header')
-    @include('admin._sidebar') //stabil
-    @yield('content')
-    @include('admin._footer')
-    @yield('footer')
+@include("admin._header")
+@include("admin._sidebar")
+
+@yield('content')
+
+@include("admin._footer")
+@yield("css_end")
+@yield("js_end")
+
+
 
 </body>
 </html>

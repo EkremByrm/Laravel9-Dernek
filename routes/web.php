@@ -33,7 +33,8 @@ Route::middleware("admin")->prefix('admin')->group(function () {
         Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('adminhome');
 
         //Category
-        Route::get('/category', [App\Http\Controllers\Admin\CategoryController::class, 'index'])->name('admin_category');
+
+    Route::get('/category', [App\Http\Controllers\Admin\CategoryController::class, 'index'])->name('admin_category');
         Route::get('/category/create', [App\Http\Controllers\Admin\CategoryController::class, 'create'])->name('admin_category_create');
         Route::post('/category/store', [App\Http\Controllers\Admin\CategoryController::class, 'store'])->name('admin_category_store');
         Route::post('/category/update/{id}', [App\Http\Controllers\Admin\CategoryController::class, 'update'])->name('admin_category_update');
@@ -83,6 +84,7 @@ Route::middleware("admin")->prefix('admin')->group(function () {
 
 
     });
+
     Route::prefix('review')->group(function () {
         Route::get('/', [App\Http\Controllers\Admin\ReviewController::class, 'index'])->name('admin_review');
         Route::get('/create', [App\Http\Controllers\Admin\ReviewController::class, 'create'])->name('admin_review_create');

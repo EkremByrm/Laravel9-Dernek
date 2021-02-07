@@ -17,7 +17,7 @@
                     </a>
                 </li>
                 <li class="active">
-                    &nbsp;/ {{$data->title}}
+                    &nbsp;/ {{$data->title}}//sql migration!!
                 </li>
             </ul>
         </div>

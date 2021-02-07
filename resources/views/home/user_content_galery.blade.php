@@ -23,6 +23,7 @@
             @include("home.usermenu")
             <div class="content three_quarter">
                 <h1>İçerikler</h1>
+
                 <form enctype="multipart/form-data" action="{{ route("user_content_image_store") }}" method="post" class="form-horizontal">
                     @csrf
                     <input type="text" style="display: none" hidden name="product_id" value="{{ $product_id }}">

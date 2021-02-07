@@ -42,6 +42,7 @@
 
                                     </select>
                                 </div>
+
                             </div>
                             <div class="control-group">
                                 <label class="control-label">Title</label>

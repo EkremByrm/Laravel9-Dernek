@@ -11,7 +11,7 @@
     @include('home._slider')
 @endsection
 
-@section('content')
+@section('content')//product tree baslangıc
     <div class="wrapper row2">
         <section class="hoc container clear">
             <!-- ################################################################################################ -->
@@ -37,7 +37,7 @@
         <section class="hoc container clear">
             <!-- ################################################################################################ -->
             <article class="one_third first">
-                <h6 class="heading">{{$soneklenen->title}}</h6>
+                <h6 class="heading">{{$soneklenen->title}}</h6>//product bölümü
                 {!! substr($soneklenen->detail,0,600)  !!}...
                 <p><a class="btn" href="{{ route('product_detail',['id'=>$soneklenen->id ,'slug'=>$soneklenen->slug])}}">Devamını Oku <i class="fas fa-angle-right"></i></a></p>
             </article>

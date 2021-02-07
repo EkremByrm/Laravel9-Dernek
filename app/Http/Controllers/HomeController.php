@@ -17,7 +17,8 @@ use function PHPUnit\Framework\isEmpty;
 class HomeController extends Controller
 {
 
-    public static function categorylist(){
+    public static function categorylist(){//tree yapısına categori content gönderme
+
         return Category::where('parent_id','=',0)->with("children")->get();
     }
     public static function settinglist(){
@@ -27,12 +28,12 @@ class HomeController extends Controller
         $setting=Setting::first();
         $slider=Product::select('title','id','slug','image')->limit(4)->get();
         $soneklenen=Product::first();
-        $galery=Image::where("product_id",$soneklenen->id)->limit(3)->get();
+        $galery=Image::where("product_id",$soneklenen->id)->limit(3)->get();//slider için döngü
         $picked=Product::limit(3)->where("status","True")->inRandomOrder()->get();
         $haber=Product::limit(3)->where("status","True")->inRandomOrder()->get();
         return view("home.index",[
             'setting'=>$setting,
-            'slider'=>$slider,
+            'slider'=>$slider,//dinamık slıder
             'soneklenen'=>$soneklenen,
             'galery'=>$galery,
             'yardim'=>$picked,
@@ -56,7 +57,8 @@ class HomeController extends Controller
         $data->save();
         return redirect()->route("contact")->with("success","Mesajınız Başarıyla Gönderilmistir.");
     }
-    public function category_content($id){
+    public function category_content($id){//categori için
+
         $datalist=Product::where("category_id",$id)->get();
         $data=Category::find($id);
         return view("home.category_content",[
@@ -65,6 +67,7 @@ class HomeController extends Controller
         ]);
     }
     public function content_detail($id){
+
         $data=Product::find($id);
         $galery=Image::where("product_id",$id)->get();
         $review=Review::where("product_id",$id)->where("status","True")->get();

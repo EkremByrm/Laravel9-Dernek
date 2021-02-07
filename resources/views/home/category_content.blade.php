@@ -7,7 +7,7 @@
     @include('home._menu')
 @endsection
 
-@section('content')//categorşye ağaç yapısı oluşturma
+@section('content')//categoriye ağaç yapısı oluşturma
     <div class="wrapper row3">
         <div class="gezinme" style="width:100%;height:50px;">
             <ul style="list-style: none;">
@@ -19,6 +19,7 @@
         </div>
 
         <main class="hoc container clear">
+
             <div class="content">
                 <!-- ################################################################################################ -->
                 <div id="gallery">

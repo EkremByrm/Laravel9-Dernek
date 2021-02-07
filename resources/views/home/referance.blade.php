@@ -7,6 +7,7 @@
     @include('home._menu')
 @endsection
 
+
 @section('content')
 
     <div class="wrapper row3">

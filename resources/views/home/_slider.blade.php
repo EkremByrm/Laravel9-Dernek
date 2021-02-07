@@ -49,6 +49,7 @@
         </defs>
     </svg>
     @endsection
+
 @section("js")
     <script src="{{ asset("assets/slider") }}/js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -127,7 +128,7 @@
         <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="{{ asset("assets/slider") }}/img/spin.svg" />
     </div>
     <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1600px;height:560px;overflow:hidden;">
-        @foreach($slider as $rs)
+        @foreach($slider as $rs)//hata veren yer buraydı
             <div>
                 <img data-u="image" data-src="{{ Storage::url($rs->image) }}" />
                 <div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
@@ -152,7 +153,7 @@
             </div>
         @endforeach
 
-
+//temps bura
     </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">slider html</a>
     <!-- Bullet Navigator -->
     <div data-u="navigator" class="jssorb132" style="position:absolute;bottom:24px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">

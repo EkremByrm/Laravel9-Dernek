@@ -23,7 +23,7 @@ Route::get('/referance', [App\Http\Controllers\HomeController::class, 'referance
 Route::post('/sendmessage', [App\Http\Controllers\HomeController::class, 'sendmessage'])->name('sendmessage');
 Route::post('/getproduct', [App\Http\Controllers\HomeController::class, 'getproduct'])->name('getproduct');
 Route::get('/productlist/{search}', [App\Http\Controllers\HomeController::class, 'productlist'])->name('productlist');
-Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faq'])->name('faq');
+Route::get('/faq', [App\Http\Controllers\HomeController::class, 'faq'])->name('faq');//31. video. sss
 Route::get('/product/{id}/{slug}', [App\Http\Controllers\HomeController::class, 'content_detail'])->name('product_detail');
 Route::get('/category/{id}/{slug}', [App\Http\Controllers\HomeController::class, 'category_content'])->name('category');
 

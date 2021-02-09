@@ -113,13 +113,13 @@ class HomeController extends Controller
             'setting'=>$setting
         ]);
     }
-    public function referance(){
+    public function referance(){//referanslarımıza rout ettik
         $setting=Setting::first();
         return view("home.referance",[
             'setting'=>$setting
         ]);
     }
-    public function faq(){
+    public function faq(){//sss kısmı için
         $data=Faq::where("status",'=','True')->get();
         return view("home.faq",[
             'data'=>$data

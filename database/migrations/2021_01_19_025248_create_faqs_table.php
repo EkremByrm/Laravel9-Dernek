@@ -13,7 +13,7 @@ class CreateFaqsTable extends Migration
      */
     public function up()
     {
-        Schema::create('faqs', function (Blueprint $table) {
+        Schema::create('faqs', function (Blueprint $table) {//yorumlar için data setibağlama
             $table->id();
             $table->integer("position")->nullable();
             $table->string("answer")->nullable();

@@ -13,7 +13,7 @@ class CreateMessagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('messages', function (Blueprint $table) {
+        Schema::create('messages', function (Blueprint $table) {//creat ve meesaje birbiri ile bağlı!
             $table->id();
             $table->string('name',50)->nullable();
             $table->string('email',75)->nullable();

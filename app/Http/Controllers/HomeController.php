@@ -78,7 +78,7 @@ class HomeController extends Controller
         ]);
     }
 
-    public function getproduct(Request $request){
+    public function getproduct(Request $request){   //biz bunu etkinlikler için uyarladık
         $search=$request->search;
         $data=Product::where("title",'like','%'.$search.'%')->get()->count();
         if($data==1){

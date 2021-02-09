@@ -10,7 +10,7 @@ use MongoDB\Driver\Server;
 class Review extends Component
 {
     public $record,$subject,$review,$product_id,$IP;
-    public  function mount($id){
+    public  function mount($id){//parametreler ile işlem yaptıgımız fonksıyon
         $this->record=Product::find($id);
         $this->product_id=$this->record->id;
     }
@@ -19,7 +19,7 @@ class Review extends Component
         return view('livewire.review');
     }
     public function resetInput(){
-        $this->review=null;
+        $this->review=null;//hoca boş bıraktı yapttı ama hata verdi
         $this->subject=null;
         $this->IP=null;
     }

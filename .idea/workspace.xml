@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2046b2cd-8c63-4b69-b3e5-4d0e20ff21c5" name="Default Changelist" comment="düzenleme 28.1(product)">
+    <list default="true" id="2046b2cd-8c63-4b69-b3e5-4d0e20ff21c5" name="Default Changelist" comment="düzenleme 31(faq sss)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_19_024717_create_messages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_19_024717_create_messages_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_19_025248_create_faqs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_19_025248_create_faqs_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Review.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Review.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +205,7 @@
       <workItem from="1612633072513" duration="4046000" />
       <workItem from="1612693926246" duration="127000" />
       <workItem from="1612694055870" duration="2094000" />
-      <workItem from="1612889043513" duration="2155000" />
+      <workItem from="1612889043513" duration="3182000" />
     </task>
     <task id="LOCAL-00001" summary="2. düzeltme">
       <created>1610298605427</created>
@@ -300,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612730599520</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="düzenleme 31(faq sss)">
+      <created>1612891455301</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1612891455301</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +339,7 @@
     <MESSAGE value="düzenleme 26(category completed)" />
     <MESSAGE value="düzenleme 28(product)" />
     <MESSAGE value="düzenleme 28.1(product)" />
-    <option name="LAST_COMMIT_MESSAGE" value="düzenleme 28.1(product)" />
+    <MESSAGE value="düzenleme 31(faq sss)" />
+    <option name="LAST_COMMIT_MESSAGE" value="düzenleme 31(faq sss)" />
   </component>
 </project>
